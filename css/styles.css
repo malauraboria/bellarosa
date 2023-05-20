@@ -1,0 +1,47 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section #logo_br {
+            width: 100px;
+            height: 100px;
+            margin-left: 40px;
+            margin-top: 20px;
+        background-color: rgb(238, 191, 198);
+
+    }
+    section nav {
+        background-color: rgb(238, 191, 198);
+        padding: auto;
+    }
+div #banner_ppal {
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+}
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 200%;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    }
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.great_vibes {
+    font-family: 'Great Vibes', cursive;
+}
+
+.roboto {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
