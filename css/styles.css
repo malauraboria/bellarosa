@@ -45,3 +45,8 @@ ul li {
 .sacramento {
     font-family: 'Sacramento', cursive;
 }
+
+li .bottom {
+    border-color: antiquewhite;
+    border-radius: 1px;
+}
