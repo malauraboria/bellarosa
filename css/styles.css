@@ -5,6 +5,20 @@
 
 body {
     background-color: rgb(238, 191, 198);
+    display: flex;
+}
+
+header {
+    flex-direction: row;
+}
+
+main {
+    flex-direction: row;
+}
+
+footer {
+    flex-direction: row;
+    align-items: center;
 }
 
 section #logo_br {
@@ -15,8 +29,11 @@ section #logo_br {
 }
 
 section nav {
-    padding: auto;
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: flex-end;
 
 }
 
@@ -54,7 +71,6 @@ nav ul li {
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
-    position: static;
 }
 
 .great_vibes {
@@ -83,7 +99,13 @@ footer p {
     color: rgb(27, 29, 31);
 }
 
-div .img_inicio {
-    display: inline-block;
-    weight: 400px 400px 400px 400px;
-}
+div img {
+    display: flex;
+    flex-flow: row nowrap;
+
+
+
+    div .img_inicio {
+        display: inline-block;
+        weight: 400px 400px 400px 400px;
+    }
