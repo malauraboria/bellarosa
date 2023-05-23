@@ -6,19 +6,39 @@
 body {
     background-color: rgb(238, 191, 198);
     display: flex;
+    flex-direction: column;
+    height: 780px;
+    padding: 1px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 header {
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 main {
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 footer {
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+}
+
+header main footer nav {
+    padding: 5px;
+    margin: 1px;
 }
 
 section #logo_br {
@@ -26,6 +46,7 @@ section #logo_br {
     height: 100px;
     margin-left: 40px;
     margin-top: 20px;
+    display: inline;
 }
 
 section nav {
@@ -34,11 +55,10 @@ section nav {
     justify-content: flex-end;
     align-items: stretch;
     align-content: flex-end;
-
 }
 
 div #banner_ppal {
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 100px 100px 100px 100px;
 }
@@ -86,11 +106,6 @@ nav ul li {
     font-family: 'Sacramento', cursive;
 }
 
-header section #logo_br {
-    display: inline-block;
-
-}
-
 footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -102,10 +117,9 @@ footer p {
 div img {
     display: flex;
     flex-flow: row nowrap;
+}
 
-
-
-    div .img_inicio {
-        display: inline-block;
-        weight: 400px 400px 400px 400px;
-    }
+div .img_inicio {
+    display: inline-block;
+    width: 400px 400px 400px 400px;
+}
