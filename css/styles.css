@@ -5,73 +5,125 @@
 
 body {
     background-color: rgb(238, 191, 198);
-    display: flex;
-    flex-direction: column;
-    height: 780px;
-    padding: 1px;
-    flex-wrap: nowrap;
+    display: grid;
+    height: 100%;
+    }
+
+    #grilla_index {
+    grid-template-areas:
+            ". header ."
+            "none nav none"
+            ". banner_ppal ."
+            ". title ."
+            ". texto-index ."
+            "img-index img-index img-index"
+            "footer footer footer";
+        grid-template-rows: repeat (7, 100px);
+        grid-template-columns: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 5px;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    margin: 0;
+    justify-items: stretch;
+    width: 100%;
+    }
+
+@media screen and (min-width: 768px) {
+    #grilla_index {
+        grid-template-areas:
+            ". header ."
+            "nav nav nav"
+            "banner_ppal banner_ppal banner_ppal"
+            ". title ."
+            ". texto-index ."
+            "img-index img-index img-index"
+            "footer footer footer";
+        grid-template-rows: repeat (7, 200px);
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #grilla_index {
+        grid-template-areas:
+        "header nav nav"
+        "banner_ppal banner_ppal banner_ppal"
+        ". title ."
+        ". texto-index ."
+        "img-index img-index img-index"
+        "footer footer footer";
+    grid-template-rows: repeat (6, 300px);
+    grid-template-columns: 20% auto auto;
+    }
 }
 
 header {
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-#header {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    grid-area: header;
 }
 
 main {
+    grid-area: main;
     flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-footer {
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
 
+footer {
+    grid-area: footer;
+    justify-content: center;
+}
+
 header main footer nav {
     padding: 5px;
-    margin: 1px;
+    margin: 5px;
 }
 
 section #logo_br {
+    grid-area: logo_br;
     width: 100px;
     height: 100px;
     margin-left: 40px;
     margin-top: 20px;
-    display: inline;
+    display: inline-flex;
+    padding: 5px
 }
 
-section nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+nav {
+    display: grid;
+    grid-area: nav;
+    justify-self: end;
+    align-self: start;
+    justify-content: end;
     align-items: stretch;
-    align-content: flex-end;
+    align-content: start;
+    margin: 5px;
 }
 
 div #banner_ppal {
+    grid-area: banner_ppal;
     width: 100%;
     height: auto;
     padding: 100px 100px 100px 100px;
 }
 
-h1 {
+section #title {
+    grid-area: title;
     font-family: 'Sacramento', cursive;
-    font-size: 200px;
+    font-size: 150px;
     font-weight: bold;
     font-style: normal;
     text-align: center;
     color: rgb(27, 29, 31);
-    text-size-adjust: auto;
 }
+
+section #texto-index {
+    grid-area: texto-index;
+}
+
+h1 {}
 
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -91,6 +143,11 @@ nav ul li {
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    color: rgb(27, 29, 31);
 }
 
 .great_vibes {
@@ -98,7 +155,6 @@ nav ul li {
 }
 
 .roboto {
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -114,12 +170,11 @@ footer p {
     color: rgb(27, 29, 31);
 }
 
-div img {
-    display: flex;
-    flex-flow: row nowrap;
+section #img-index {
+    grid-area: img-index;
 }
 
 div .img_inicio {
     display: inline-block;
-    width: 400px 400px 400px 400px;
+    width: 150px;
 }
