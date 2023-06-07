@@ -2,26 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
   #grilla_index {
     grid-template-areas: "header" "nav" "banner_ppal" "title" "texto-index" "img-index" "footer";
-    grid-template-rows: repeat 7, 100%;
+    grid-template-rows: repeat(7, 100%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 768px) {
   #grilla_index {
     grid-template-areas: ". header ." "nav nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat 7, 200px;
+    grid-template-rows: repeat(7, 200px);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   #grilla_index {
     grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat 6, 300px;
+    grid-template-rows: repeat(6, 300px);
     grid-template-columns: 20% auto auto;
   }
 }
@@ -29,7 +30,6 @@ body {
   background-color: rgb(238, 191, 198);
   display: grid;
   height: 100%;
-  border: auto;
 }
 
 footer {
@@ -50,54 +50,55 @@ header {
   display: grid;
   grid-template-areas: "logo_br nav";
   background-color: rgb(238, 191, 198);
+  justify-items: center;
+  align-items: center;
 }
 
 main {
-  grid-area: main;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 nav {
   display: grid;
-  background-color: rgb(238, 191, 198);
   grid-area: nav;
+  background-color: rgb(238, 191, 198);
   justify-self: end;
   align-self: start;
-  justify-content: end;
-  align-items: stretch;
-  align-content: flex-end;
   margin: 5px;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 nav ul li {
-  padding: 7px 7px 7px 7px;
+  padding: 7px;
   background-color: rgb(238, 191, 198);
   border: 3px solid white;
-  border-width: 3px;
   border-radius: 5px;
-  margin: 20px 20px 20px 20px;
-  list-style-type: none;
-  text-decoration: none;
+  margin: 20px;
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   text-align: center;
   color: rgb(27, 29, 31);
 }
 
 #acerca_de {
-  display: flex inline-block;
-  flex-direction: row;
+  display: inline-block;
   width: 15rem;
   border-radius: 1px;
 }
 
 #grilla_index {
+  display: grid;
   grid-template-areas: "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-  grid-template-rows: repeat 6, 10rem;
+  grid-template-rows: repeat(6, 10rem);
   grid-template-columns: auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -110,15 +111,11 @@ nav ul li {
   justify-items: center;
   width: 100%;
 }
-#grilla_index header main footer nav {
-  padding: 5px;
-  margin: 5px;
-}
 
 #cabecera {
   display: grid;
   grid-template-areas: "logo_br nav";
-  grid-template-rows: 10rem, 10rem;
+  grid-template-rows: 10rem 10rem;
   grid-template-columns: auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -136,7 +133,7 @@ nav ul li {
 #mi_carrito {
   display: grid;
   grid-template-areas: "card card card" "card card card" "card card card" "card card card" "card card card";
-  grid-template-rows: repeat 5, 10rem;
+  grid-template-rows: repeat(5, 10rem);
   grid-template-columns: auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -153,21 +150,21 @@ nav ul li {
 @media screen and (max-width: 767px) {
   #grilla_index {
     grid-template-areas: "header" "nav" "banner_ppal" "title" "texto-index" "img-index" "footer";
-    grid-template-rows: repeat 7, 100%;
+    grid-template-rows: repeat(7, 100%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 768px) {
   #grilla_index {
     grid-template-areas: ". header ." "nav nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat 7, 200px;
+    grid-template-rows: repeat(7, 200px);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   #grilla_index {
     grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat 6, 300px;
+    grid-template-rows: repeat(6, 300px);
     grid-template-columns: 20% auto auto;
   }
 }
