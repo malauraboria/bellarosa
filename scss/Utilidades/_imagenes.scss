@@ -1,0 +1,51 @@
+section img {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#logo_br {
+    grid-area: logo_br;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: inline-flex;
+    padding: 5px;
+}
+
+#banner_ppal {
+    grid-area: banner_ppal;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+}
+
+#img-index {
+    grid-area: img-index;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.fila_img{
+    display: flex;
+    flex-direction: row;
+}
+
+.img_inicio {
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.img_productos {
+    display: inline-block;
+    width: 15rem;
+    border-radius: 1px;
+}
+
+
+
+
+
+

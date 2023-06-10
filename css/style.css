@@ -5,24 +5,24 @@
   border: 1px solid red;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 420px) and (max-width: 767px) {
   #grilla_index {
-    grid-template-areas: "header" "nav" "banner_ppal" "title" "texto-index" "img-index" "footer";
-    grid-template-rows: repeat(7, 100%);
+    grid-template-areas: "header" "nav" "banner_ppal" "banner_ppal" "title" "title" "texto-index" "texto-index" "fila_img" "fila_img" "fila_img" "fila_img" "footer" "footer";
+    grid-template-rows: repeat(7, 12%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 768px) {
   #grilla_index {
     grid-template-areas: ". header ." "nav nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat(7, 200px);
+    grid-template-rows: repeat(7, 12%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   #grilla_index {
     grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, 15%);
     grid-template-columns: 20% auto auto;
   }
 }
@@ -52,6 +52,7 @@ header {
   background-color: rgb(238, 191, 198);
   justify-items: center;
   align-items: center;
+  grid-area: header;
 }
 
 main {
@@ -59,23 +60,17 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-area: main;
 }
 
 nav {
-  display: grid;
-  grid-area: nav;
-  background-color: rgb(238, 191, 198);
-  justify-self: end;
-  align-self: start;
-  margin: 5px;
+  grid-template-areas: nav;
 }
-
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 nav ul li {
   padding: 7px;
   background-color: rgb(238, 191, 198);
@@ -97,7 +92,7 @@ nav ul li {
 
 #grilla_index {
   display: grid;
-  grid-template-areas: "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
+  grid-template-areas: "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "img-index img-index img-index" "footer footer footer";
   grid-template-rows: repeat(6, 10rem);
   grid-template-columns: auto;
   -moz-column-gap: 10px;
@@ -108,7 +103,7 @@ nav ul li {
   align-items: stretch;
   align-content: center;
   margin: 20px;
-  justify-items: center;
+  justify-items: stretch;
   width: 100%;
 }
 
@@ -147,24 +142,36 @@ nav ul li {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+body {
+  display: grid;
+  grid-template-areas: "header nav nav" "main main main" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0;
+  justify-items: center;
+  width: 80%;
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
   #grilla_index {
-    grid-template-areas: "header" "nav" "banner_ppal" "title" "texto-index" "img-index" "footer";
-    grid-template-rows: repeat(7, 100%);
+    grid-template-areas: "header" "nav" "banner_ppal" "banner_ppal" "title" "title" "texto-index" "texto-index" "fila_img" "fila_img" "fila_img" "fila_img" "footer" "footer";
+    grid-template-rows: repeat(7, 12%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 768px) {
   #grilla_index {
     grid-template-areas: ". header ." "nav nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat(7, 200px);
+    grid-template-rows: repeat(7, 12%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   #grilla_index {
     grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, 15%);
     grid-template-columns: 20% auto auto;
   }
 }
@@ -179,7 +186,7 @@ section img {
   width: 100px;
   height: 100px;
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-flex;
   padding: 5px;
 }
@@ -188,20 +195,24 @@ section img {
   grid-area: banner_ppal;
   width: 100%;
   height: auto;
-  padding: 100px 100px 100px 100px;
+  padding: 100px;
 }
 
 #img-index {
   grid-area: img-index;
-  display: inline-block;
-  width: 15rem;
-  border-radius: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fila_img {
+  display: flex;
+  flex-direction: row;
 }
 
 .img_inicio {
-  display: inline-block;
-  width: 15rem;
-  border-radius: 1px;
+  width: auto;
+  height: auto;
+  padding: 10px;
 }
 
 .img_productos {
@@ -238,7 +249,7 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   color: rgb(27, 29, 31);
   -webkit-text-size-adjust: auto;
@@ -249,7 +260,7 @@ h2 {
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   color: rgb(27, 29, 31);
   -webkit-text-size-adjust: auto;
@@ -272,7 +283,7 @@ h3 {
 .form-nombre {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-style: bold;
+  font-weight: bold;
   color: rgb(27, 29, 31);
   -webkit-text-size-adjust: auto;
      -moz-text-size-adjust: auto;
@@ -282,7 +293,7 @@ h3 {
 .form-mail {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-style: bold;
+  font-weight: bold;
   color: rgb(27, 29, 31);
   -webkit-text-size-adjust: auto;
      -moz-text-size-adjust: auto;
@@ -292,7 +303,7 @@ h3 {
 .form-texto {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-style: bold;
+  font-weight: bold;
   color: rgb(27, 29, 31);
   -webkit-text-size-adjust: auto;
      -moz-text-size-adjust: auto;

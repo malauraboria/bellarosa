@@ -1,0 +1,76 @@
+section #title {
+    grid-area: title;
+    font-family: 'Sacramento', cursive;
+    font-size: 150px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: rgb(27, 29, 31);
+}
+
+section #texto-index {
+    grid-area: texto-index;
+}
+
+h1 {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 10rem;
+    font-style: normal;
+    text-align: center;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}
+
+.great_vibes {
+    font-family: 'Great Vibes', cursive;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.form-nombre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}
+
+.form-mail {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}
+
+.form-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(27, 29, 31);
+    text-size-adjust: auto;
+}

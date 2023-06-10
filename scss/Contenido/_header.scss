@@ -1,0 +1,8 @@
+header {
+    display: grid;
+    grid-template-areas: "logo_br nav";
+    background-color: rgb(238, 191, 198);
+    justify-items: center;
+    align-items: center;
+    grid-area: header;
+}
