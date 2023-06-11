@@ -1,5 +1,7 @@
 body {
     background-color: rgb(238, 191, 198);
-    display: grid;
-    height: 100%;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+}

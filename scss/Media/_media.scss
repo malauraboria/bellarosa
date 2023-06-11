@@ -16,20 +16,31 @@
 @media screen and (min-width: 768px) {
     #grilla_index {
         grid-template-areas:
-            ". header ."
-            "nav nav nav"
+            "header . nav"
             "banner_ppal banner_ppal banner_ppal"
             ". title ."
             ". texto-index ."
-            "img-index img-index img-index"
+            "fila_img fila_img fila_img"
+            "fila_img fila_img fila_img"
             "footer footer footer";
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
 }
 
-@media screen {
-    
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    #grilla_index {
+        grid-template-areas:
+            "header . nav"
+            "banner_ppal banner_ppal banner_ppal"
+            ". title ."
+            ". texto-index ."
+            "fila_img fila_img fila_img"
+            "fila_img fila_img fila_img"
+            "footer footer footer";
+        grid-template-rows: repeat(7, 12%);
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
