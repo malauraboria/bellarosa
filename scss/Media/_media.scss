@@ -1,5 +1,6 @@
 @media screen and (min-width: 420px) and (max-width: 767px) {
     #grilla_index {
+        display: grid;
         grid-template-areas:
             "header" "nav"
             "banner_ppal" "banner_ppal"
@@ -11,10 +12,14 @@
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
+    body {
+        background-color: rgb(238, 191, 198);
+    }
 }
 
 @media screen and (min-width: 768px) {
     #grilla_index {
+        display: grid;
         grid-template-areas:
             "header . nav"
             "banner_ppal banner_ppal banner_ppal"
@@ -25,11 +30,15 @@
             "footer footer footer";
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
+    }
+    body {
+        background-color: rgb(238, 191, 198);
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
     #grilla_index {
+        display: grid;
         grid-template-areas:
             "header . nav"
             "banner_ppal banner_ppal banner_ppal"
@@ -41,10 +50,14 @@
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
+    body {
+        background-color: rgb(238, 191, 198);
+    }
 }
 
 @media screen and (min-width: 1200px) {
     #grilla_index {
+        display: grid;
         grid-template-areas:
             "header nav nav"
             "banner_ppal banner_ppal banner_ppal"
@@ -54,5 +67,8 @@
             "footer footer footer";
         grid-template-rows: repeat(6, 15%);
         grid-template-columns: 20% auto auto;
+    }
+    body {
+        background-color: rgb(238, 191, 198);
     }
 }

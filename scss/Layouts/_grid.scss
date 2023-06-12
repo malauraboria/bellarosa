@@ -1,44 +1,4 @@
-#grilla_index {
-    display: grid;
-    grid-template-areas:
-        "banner_ppal banner_ppal banner_ppal"
-        ". title ."
-        ". texto-index ."
-        "img-index img-index img-index"
-        "img-index img-index img-index"
-        "footer footer footer";
-    grid-template-rows: repeat(6, 10rem);
-    grid-template-columns: auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 5px;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
-    margin: 20px;
-    justify-items: stretch;
-    width: 100%;
-}
-
-#cabecera {
-    display: grid;
-    grid-template-areas:
-        "logo_br nav";
-    grid-template-rows: 10rem 10rem;
-    grid-template-columns: auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 5px;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: flex-end;
-    margin: 0;
-    justify-items: stretch;
-    width: 100%;
-    background-color: rgb(238, 191, 198);
-}
-
-#mi_carrito {
+.col #mi_carrito {
     display: grid;
     grid-template-areas:
         "card card card"
@@ -46,8 +6,9 @@
         "card card card"
         "card card card"
         "card card card";
-    grid-template-rows: repeat(5, 10rem);
+    grid-template-rows: repeat(5, 2rem);
     grid-template-columns: auto;
+    grid-auto-flow: row;
     column-gap: 10px;
     row-gap: 10px;
     padding: 5px;
@@ -57,6 +18,11 @@
     margin: 0;
     justify-items: center;
     width: 100%;
+}
+
+.col #mi_carrito .card {
+    width: 18rem;
+    margin-bottom: 10px;
 }
 
 body{
@@ -70,6 +36,7 @@ body{
     justify-content: space-evenly;
     align-content: center;
     margin: 0;
+    padding: 0;
     justify-items: center;
-    width: 80%;
+    width: 100%;
 }
