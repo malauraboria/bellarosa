@@ -42,8 +42,13 @@ section img {
     opacity: 0.5;
 }
 
-    .img_productos {
-        display: inline-block;
-        width: 15rem;
-        border-radius: 1px;
-    }
+.img_productos {
+    display: inline-block;
+    width: 15rem;
+    border-radius: 1px;
+}
+
+#img-acerca {
+    display: flex;
+    flex-wrap: wrap;
+   }
