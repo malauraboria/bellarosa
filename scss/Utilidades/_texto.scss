@@ -1,4 +1,4 @@
-section #title {
+#title {
     grid-area: title;
     font-family: 'Sacramento', cursive;
     font-size: 150px;
@@ -8,7 +8,7 @@ section #title {
     color: rgb(27, 29, 31);
 }
 
-section #texto-index {
+#texto-index {
     grid-area: texto-index;
 }
 
@@ -75,10 +75,19 @@ h3 {
     text-size-adjust: auto;
 }
 
-#acerca_de .acerca_de {
+.acerca_de {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: center;
     color: rgb(27, 29, 31);
     text-size-adjust: auto;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
