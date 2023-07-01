@@ -32,6 +32,7 @@
 .col #mi_carrito .card {
   width: 18rem;
   margin-bottom: 10px;
+  float: left;
 }
 
 body {
@@ -56,22 +57,6 @@ body {
   padding: 0;
 }
 
-footer {
-  display: grid;
-  grid-area: footer;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-footer p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  text-align: center;
-  color: rgb(27, 29, 31);
-}
-
 header {
   display: grid;
   grid-area: header;
@@ -83,20 +68,10 @@ header {
   margin: 0;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  grid-area: main;
-}
-
 nav {
   grid-area: nav;
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  margin: 30px;
 }
 nav ul {
   list-style-type: none;
@@ -112,6 +87,32 @@ nav ul li {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  text-align: center;
+  color: rgb(27, 29, 31);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  grid-area: main;
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
   text-align: center;
   color: rgb(27, 29, 31);
 }
@@ -134,9 +135,9 @@ section img {
 
 #banner_ppal {
   grid-area: banner_ppal;
-  width: 100%;
+  width: 90%;
   height: auto;
-  padding: 100px;
+  padding: 50px;
 }
 
 #img-index {
