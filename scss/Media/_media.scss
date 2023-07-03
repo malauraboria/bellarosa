@@ -1,30 +1,30 @@
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     #grilla_index {
         display: grid;
         grid-template-areas:
             "header" "nav"
-            "banner_ppal" "banner_ppal"
-            "title" "title"
-            "texto-index" "texto-index"
-            "fila_img" "fila_img"
-            "fila_img" "fila_img"
-            "footer" "footer";
+            "banner_ppal"
+            "title"
+            "texto-index"
+            "fila_img fila_img"
+            "fila_img fila_img"
+            "footer";
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     #grilla_index {
         display: grid;
         grid-template-areas:
-            "header . nav"
-            "banner_ppal banner_ppal banner_ppal"
+            "header nav"
+            "banner_ppal"
             ". title ."
             ". texto-index ."
             "fila_img fila_img fila_img"
             "fila_img fila_img fila_img"
-            "footer footer footer";
+            "footer";
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
@@ -34,13 +34,13 @@
     #grilla_index {
         display: grid;
         grid-template-areas:
-            "header . nav"
-            "banner_ppal banner_ppal banner_ppal"
+            "header nav"
+            "banner_ppal"
             ". title ."
             ". texto-index ."
             "fila_img fila_img fila_img"
             "fila_img fila_img fila_img"
-            "footer footer footer";
+            "footer";
         grid-template-rows: repeat(7, 12%);
         grid-template-columns: auto;
     }
@@ -54,7 +54,7 @@
             "banner_ppal banner_ppal banner_ppal"
             ". title ."
             ". texto-index ."
-            "img-index img-index img-index"
+            "img-index img-index img-index img-index img-index img-index"
             "footer footer footer";
         grid-template-rows: repeat(6, 15%);
         grid-template-columns: 20% auto auto;
