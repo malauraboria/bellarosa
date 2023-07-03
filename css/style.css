@@ -280,16 +280,64 @@ h3 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #grilla_index {
     display: grid;
-    grid-template-areas: "header" "nav" "banner_ppal" "title" "texto-index" "fila_img fila_img" "fila_img fila_img" "footer";
-    grid-template-rows: repeat(7, 12%);
+    grid-template-areas: "header nav" "banner_ppal" "title" "texto-index" "fila_img fila_img" "fila_img fila_img" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_acerca {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" "title" "acerca_de" "img-acerca" "img-acerca" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_productos {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" "title" "title_prod" "img-productos" "img-productos" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_carrito {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" "title" "title_carrito" "mi_carrito" "mi_carrito" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_contacto {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" "title" "title_contact" "formulario" "footer";
+    grid-template-rows: repeat(6, 10%);
     grid-template-columns: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #grilla_index {
     display: grid;
-    grid-template-areas: "header nav" "banner_ppal" ". title ." ". texto-index ." "fila_img fila_img fila_img" "fila_img fila_img fila_img" "footer";
-    grid-template-rows: repeat(7, 12%);
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". texto-index ." "fila_img fila_img" "fila_img fila_img" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_acerca {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". acerca_de ." "img-acerca img-acerca" "img-acerca img-acerca" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_productos {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." "title_prod" "img-productos img-productos" "img-productos img-productos" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_carrito {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". title_carrito ." "mi_carrito mi_carrito" "mi_carrito mi_carrito" "footer";
+    grid-template-rows: repeat(7, 10%);
+    grid-template-columns: auto;
+  }
+  #grilla_contacto {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". title_contact ." "formulario" "footer";
+    grid-template-rows: repeat(6, 10%);
     grid-template-columns: auto;
   }
 }
@@ -300,6 +348,30 @@ h3 {
     grid-template-rows: repeat(7, 12%);
     grid-template-columns: auto;
   }
+  #grilla_acerca {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". acerca_de ." "img-acerca img-acerca img-acerca" "img-acerca img-acerca img-acerca" "footer";
+    grid-template-rows: repeat(7, 12%);
+    grid-template-columns: auto;
+  }
+  #grilla_productos {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". title_prod ." "img-productos img-productos img-productos" "img-productos img-productos img-productos" "footer";
+    grid-template-rows: repeat(7, 12%);
+    grid-template-columns: auto;
+  }
+  #grilla_carrito {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". title_carrito ." "mi_carrito mi_carrito mi_carrito" "mi_carrito mi_carrito mi_carrito" "footer";
+    grid-template-rows: repeat(7, 12%);
+    grid-template-columns: auto;
+  }
+  #grilla_contacto {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal" ". title ." ". title_contact ." "formulario" "footer";
+    grid-template-rows: repeat(6, 12%);
+    grid-template-columns: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   #grilla_index {
@@ -307,6 +379,30 @@ h3 {
     grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". texto-index ." "img-index img-index img-index img-index img-index img-index" "footer footer footer";
     grid-template-rows: repeat(6, 15%);
     grid-template-columns: 20% auto auto;
+  }
+  #grilla_acerca {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". acerca_de ." "img-acerca img-acerca" "img-acerca img-acerca" "footer";
+    grid-template-rows: repeat(7, 15%);
+    grid-template-columns: auto;
+  }
+  #grilla_productos {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". title_prod ." "img-productos" "img-productos" "footer";
+    grid-template-rows: repeat(7, 15%);
+    grid-template-columns: auto;
+  }
+  #grilla_carrito {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". title_carrito ." "mi_carrito" "mi_carrito" "footer";
+    grid-template-rows: repeat(7, 15%);
+    grid-template-columns: auto;
+  }
+  #grilla_contacto {
+    display: grid;
+    grid-template-areas: "header nav" "banner_ppal banner_ppal banner_ppal" ". title ." ". title_contact ." "formulario" "footer";
+    grid-template-rows: repeat(6, 15%);
+    grid-template-columns: auto;
   }
 }
 body {
