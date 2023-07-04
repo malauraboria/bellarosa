@@ -81,13 +81,19 @@ h3 {
     text-align: center;
     color: rgb(27, 29, 31);
     text-size-adjust: auto;
-    width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.texto {
-    width: 90%;
+.texto,
+.title,
+.acerca_de,
+.title_contact,
+.title_carrito,
+.title_prod {
     margin: 0 auto;
     text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
 }
