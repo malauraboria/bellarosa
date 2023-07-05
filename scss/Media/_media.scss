@@ -190,14 +190,7 @@
 
       #grilla_contacto {
           display: grid;
-          grid-template-areas:
-              "header nav nav"
-              "banner_ppal banner_ppal banner_ppal"
-              "title title title"
-              "title_contact title_contact title_contact"
-              "formulario formulario formulario"
-              "footer footer footer";
-          grid-template-rows: repeat(6, auto);
+          grid-template-rows: auto;
           grid-template-columns: auto;
       }
   }
