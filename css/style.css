@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -291,111 +290,57 @@ h3 {
   font-size: 1rem;
 }
 
-/* Estilos para teléfonos */
 @media screen and (max-width: 600px) {
-  #grilla_index {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal" "title" "texto-index" "fila_img" "footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_acerca {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal" "title" "acerca_de" "img-acerca" "footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_productos {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal" "title" "title_prod" "img-productos" "footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_carrito {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal" "title" "title_carrito" "mi_carrito" "footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
+  #grilla_index,
+  #grilla_acerca,
+  #grilla_productos,
+  #grilla_carrito,
   #grilla_contacto {
     display: grid;
-    grid-template-areas: "header nav" "banner_ppal" "title" "title_contact" "formulario" "footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-}
-/* Estilos para tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  #grilla_index {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal banner_ppal" "title title" "texto-index texto-index" "fila_img fila_img" "footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_acerca {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal banner_ppal" "title title" "acerca_de acerca_de" "img-acerca img-acerca" "footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_productos {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal banner_ppal" "title title" "title_prod title_prod" "img-productos img-productos" "footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_carrito {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal banner_ppal" "title title" "title_carrito title_carrito" "mi_carrito mi_carrito" "footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_contacto {
-    display: grid;
-    grid-template-areas: "header nav" "banner_ppal banner_ppal" "title title" "title_contact title_contact" "formulario formulario" "footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-}
-/* Estilos para desktop */
-@media screen and (min-width: 1025px) {
-  #grilla_index {
-    display: grid;
-    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "texto-index texto-index texto-index" "img-index img-index img-index" "footer footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_acerca {
-    display: grid;
-    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "acerca_de acerca_de acerca_de" "img-acerca img-acerca img-acerca" "footer footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_productos {
-    display: grid;
-    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "title_prod title_prod title_prod" "img-productos img-productos img-productos" "footer footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_carrito {
-    display: grid;
-    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "title_carrito title_carrito title_carrito" "mi_carrito mi_carrito mi_carrito" "footer footer footer";
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
-  }
-  #grilla_contacto {
-    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px;
+    grid-template-areas: "header" "banner_ppal" "title" "texto-index" "fila_img" "footer";
     grid-template-rows: auto;
     grid-template-columns: auto;
   }
 }
-#grilla_index,
-#grilla_acerca,
-#grilla_productos,
-#grilla_carrito,
-#grilla_contacto {
-  justify-items: center;
-  align-items: center;
-  max-width: 100%;
-  padding: 1%;
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #grilla_index,
+  #grilla_acerca,
+  #grilla_productos,
+  #grilla_carrito,
+  #grilla_contacto {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px;
+    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "texto-index texto-index texto-index" "fila_img fila_img fila_img" "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #grilla_index,
+  #grilla_acerca,
+  #grilla_productos,
+  #grilla_carrito,
+  #grilla_contacto {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px;
+    grid-template-areas: "header nav nav" "banner_ppal banner_ppal banner_ppal" "title title title" "texto-index texto-index texto-index" "img-index img-index img-index" "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+}
+.title,
+.title_prod,
+.title_carrito,
+.title_contact {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
