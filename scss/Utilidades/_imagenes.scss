@@ -50,7 +50,8 @@ section img {
 
 #img-acerca {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .fila_img .img_acerca {
@@ -58,6 +59,7 @@ section img {
     height: 300px;
     padding: 10px;
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
